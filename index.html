@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <title>js9-10</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link rel="stylesheet" href="dist_css/style.main.min.css">
+
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="js/dist/script.main.min.js"></script>
+  </head>
+
+  <body>
+      <div class="conteiner">
+          <div class="nav-menu">
+            <nav>
+                <ul id="menu" class="clearfix">
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="sub-a">Nav 3</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Nav 3.1</a></li>
+                            <li><a href="#">Nav 3.2</a></li>
+                            <li><a href="#">Nav 3.3</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="sub-a">Nav 3.4</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Nav 3.4.1</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="sub-a">Nav 3.4.2</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Nav 3.4.2.1</a></li>
+                                            <li><a href="#">Nav 3.4.2.2</a></li>
+                                            <li><a href="#">Nav 3.4.2.3</a></li>
+                                            <li><a href="#">Nav 3.4.2.4</a></li>
+                                            <li><a href="#">Nav 3.4.2.5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Nav 3.4.3</a></li>
+                                    <li><a href="#">Nav 3.4.4</a></li>
+                                    <li><a href="#">Nav 3.4.5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nav 3.5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nav 4</a></li>
+                    <li><a href="#">Nav 5</a></li>
+                </ul>
+            </nav>
+          </div>
+
+          <div class="wrapper-carousel">
+            <h3 id="title-carousel">Carousel</h3>
+            <div class="owl-carousel">
+                <div id="carousel-item"><img class="carousel-img" src="img/slide_1.jpg" alt="slider"></div>
+                <div id="carousel-item"><img class="carousel-img" src="img/slide_2.jpg" alt="slider"></div>
+                <div id="carousel-item"><img class="carousel-img" src="img/slide_3.jpg" alt="slider"></div>
+                <div id="carousel-item"><img class="carousel-img" src="img/slide_4.jpg" alt="slider"></div>
+                <div id="carousel-item"><img class="carousel-img" src="img/slide_5.jpg" alt="slider"></div>
+                <div id="carousel-item"><img class="carousel-img" src="img/slide_6.jpg" alt="slider"></div>
+            </div>
+          </div>
+
+          <div class="wrapper-select">
+            <h3 id="title-head">Select</h3>
+
+              <section class="select-box">
+                  <select class="select-option">
+              			<option data-display="Select">Options All</option>
+              			<option value="1">option 1</option>
+              			<option value="2">option 2</option>
+              			<option value="3">option 3</option>
+              			<option value="4">option 4</option>
+              		</select>
+              </section>
+
+            <section class="select-box">
+                <select class="select-option">
+                  <option data-display="Select">Options All</option>
+                  <option value="1">option 1</option>
+                  <option value="2">option 2</option>
+                  <option value="3">option 3</option>
+                  <option value="4">option 4</option>
+                </select>
+            </section>
+	        </div>
+
+          <div class="wrapper-checkbox">
+            <div class="check-js">
+            <h3 id="title-head">Checkbox jquery</h3>
+            <form class="check-box-form" action="index.html" method="post">
+                <label><input type="checkbox" class="check-box" name="movies" value="0" /> Обожаю</label>
+                <label><input type="checkbox" class="check-box" name="movies" value="1" /> Не против</label>
+                <label><input type="checkbox" class="check-box" name="movies" value="2" /> Так себе</label>
+                <label><input type="checkbox" class="check-box" name="movies" value="3" /> Ненавижу</label>
+            </form>
+          </div>
+
+          <div class="check-css">
+            <h3 id="title-head">Checkbox css</h3>
+            <form class="checkbox-form" action="index.html" method="post">
+            <label>
+              <input class="checkbox" type="checkbox" name="checkbox-test">
+              <span class="checkbox-custom"></span>Обожаю
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox" name="checkbox-test">
+              <span class="checkbox-custom"></span>Не против
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox" name="checkbox-test">
+              <span class="checkbox-custom"></span>Так себе
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox" name="checkbox-test">
+              <span class="checkbox-custom"></span>Ненавижу
+            </label>
+          </form>
+          </div>
+
+          </div>
+      </div>
+  </body>
+</html>

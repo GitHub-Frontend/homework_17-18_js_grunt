@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a:visited {
+  text-decoration: none;
+}
+.conteiner {
+    width: 70%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.nav-menu {
+    background-color: rgb(255,100,100);
+    padding: 10px 0;
+}
+#menu {
+    margin: 0;
+    padding: 0;
+
+}
+#menu li {
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    width: 100px;
+    height: 30px;
+    list-style: none;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+#menu li ul {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    left: 20px;
+    top: 39px;
+}
+#menu li ul li {
+    margin: 0;
+    width: 150px;
+    height: 42px;
+    float: none;
+    text-align: center;
+}
+#menu li >ul{
+  background: rgb(200,50,50);
+  z-index: 999;
+  display: none;
+  border: solid 1px #fff;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+}
+#menu li ul a {
+    width: 145px;
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px rgb(255,100,100);
+    color: #fff
+}
+#menu li a:hover  {
+    color: #0d369e;
+    text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.4);
+}
+#menu li.dropdown > a {
+    background-image: url(../img/arrow-drop-down.png);
+    background-position: right 8px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+}
+#menu li li.dropdown > a {
+    background-image: url(../img/arrow-right.png);
+    background-position: right 5px;
+    background-size: 6px;
+    background-repeat: no-repeat;
+}
+#menu ul li > ul {
+    left: 147px;
+    top: 0;
+    height: 211.5px;
+}
+/*!---Animation-----*/
+#menu .sub-menu {
+    animation: color-change 2s;
+}
+@keyframes color-change {
+    from {
+        background-color: rgb(255,100,100);
+    }
+    to {
+        background-color: rgb(200,50,50);
+    }
+}
+@-webkit-keyframes color-change {
+    from {
+        background-color: rgb(255,100,100);
+    }
+    to {
+        background-color: rgb(200,50,50);
+    }
+}
+/*!----END MENU----->*/
+
+#title-head {
+    margin-top: 20px;
+    color: #fff;
+}
+#title-carousel {
+    color: #fff;
+    padding: 30px 20px;
+    background: #66a3a8;
+    margin: 0;
+    border-bottom: 3px solid #fff;
+}
+.wrapper-carousel {
+    margin: 30px auto;
+    width: 100%;
+}
+.carousel-img {
+    height: 230px;
+    overflow: hidden;
+}
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgb(255,100,100);
+    color: #fff;
+    font-size: 16px;
+    border-top: 3px solid #fff;
+}
+.wrapper-select {
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: rgb(255,100,100);
+
+}
+.select-box {
+    margin: 0 20px;
+}
+.select-option {
+    padding: 10px 20px;
+}
+.wrapper-checkbox {
+    margin: 30px auto;
+    padding: 30px 20px;
+    background: #66a3a8;
+    color: #fff;
+    text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.7)
+}
+.check-css, .check-js {
+    margin: 10px 0;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.check-css .checkbox{
+    display: none;
+}
+.checkbox-custom {
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px black;
+    background: #eee;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox-custom, .label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+.checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: rgb(200,50,50);
+    border-radius: 2px;
+}
